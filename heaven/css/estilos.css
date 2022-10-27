@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "gilroy-regular";
+    src: url("../font/Gilroy-Regular.ttf");
+}
+
+@font-face{
+    font-family: "gilroy-semibold";
+    src: url("../font/Gilroy-SemiBold.ttf");
+}
+@font-face{
+    font-family: "gilroy-bold";
+    src: url("../font/Gilroy-Bold.ttf");
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px ;
+    background-color: #885fcb;
+    width: 100%;
+}
+
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    *position: static;
+}
+
+.menu{
+    background-image: url("../image/menu.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 26px;
+    height: 16px;
+}
+
+.menu__imagen{
+    width: 62px;
+    height: 55px;
+}
+
+.controles{
+    display: flex;
+    align-items: center;
+}
+
+.controles__carrito{
+    background-image: url("../image/carrito.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.controles__enlace{
+    width: 20px;
+    height: 20px;
+}
+.controles__cuenta{
+    background-image: url("../image/cuenta.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.controles__total{
+    font-family: gilroy-bold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.portada{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../image/derrame.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+}
+
+.portada__imagen{
+    width: 1049px;
+    height: 478px;
+    opacity: 0.16;
+
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 240px;
+    top: 168px;
+    width: 100%;
+}
+
+.titulo__1{
+    color: #ffffff;
+    font-family: "gilroy-semibold";
+    font-size: 112px;
+}
+
+.titulo__2{
+    color: #f2cf10;
+    font-family: "gilroy-semibold";
+    font-size: 35px;
+}
+
+.portada-ingresar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    *background: #87c7ff;
+}
+.contenedor-portada{
+    width: 41%;
+    height: 100%;
+    background-color:#f2cf10;
+    background-image: url("../image/mascara.png");
+    background-size: contain;
+    background-position: top;
+}
+.contenedor-formulario{
+    width:59%;
+    height: 100%;
+    background-color: #885FCB;
+}
+.formulario-texto{
+    margin-top: 164px;
+    margin-left: 68px;
+    width: 534px;
+    height: 359px;
+    *background-color: #ffffff;
+    font-family: gilroy-semibold;
+}
+.formulario-texto__h2{
+    font-size: 30px;
+    margin-bottom: 55px;
+    color: #A1F0FA;
+}
+.formulario-texto__label{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.formulario-texto__input{
+    font-family: gilroy-regular;
+    font-size: 16px;
+    border: 0;
+    color: #FFFFFFff;
+    background: #885FCB;
+    border-bottom: 2px solid #A1F0FA;
+    margin-bottom: 30px;
+}
+
+.formulario-texto__boton{
+    cursor: pointer;
+    width: 141px;
+    height: 40px;
+    background-color: #A1F0FA;
+    margin-right: 20px;
+    padding: 8px 33px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 21px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+}
+.formulario-texto__boton:hover{
+    background-color: #F2CF10;
+}
+.formulario-texto__boton:active{
+    background-color: #F2CF10;
+    font-family: gilroy-bold;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px #00000099;
+}
+.formulario-texto__form{
+    display: flex;
+    flex-direction: column;
+}
+.formulario-texto__botones{
+    margin-bottom: 25px;
+}
+
+.formulario-texto__enlace{
+    color: #FFFFFF66;
+    font-family: gilroy-regular;
+}
+
+.formulario-texto__enlace:hover{
+    color: #f2cf10;
+}
