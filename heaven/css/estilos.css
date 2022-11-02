@@ -17,7 +17,9 @@
     src: url("../font/Gilroy-Bold.ttf");
 }
 
-
+body{
+    background-color: #885FCB;
+}
 .header{
     display: flex;
     flex-direction: row;
@@ -149,8 +151,15 @@
 }
 .formulario-texto__h2{
     font-size: 30px;
-    margin-bottom: 55px;
+    margin-bottom: 4px;
     color: #A1F0FA;
+}
+
+.barra {
+    width: 114px;
+    height: 4px;
+    background-color: #A1F0FA;
+    margin-bottom: 55px;
 }
 .formulario-texto__label{
     font-size: 18px;
@@ -166,6 +175,10 @@
     background: #885FCB;
     border-bottom: 2px solid #A1F0FA;
     margin-bottom: 30px;
+}
+
+.formulario-texto__input:focus{
+    outline: none;
 }
 
 .formulario-texto__boton{
@@ -207,4 +220,176 @@
 
 .formulario-texto__enlace:hover{
     color: #f2cf10;
+}
+
+
+/*Pagina producto-categorias*/
+
+.portada-pc{
+    
+    margin-top: 20px;
+    margin-left: 123px;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 55px;
+}
+.opciones input{display:none;
+}
+
+.opciones input + label{
+    font-family: gilroy-regular;
+    font-size: 40px;
+    color: #FFFFFF40;
+    cursor: pointer;
+}
+input:checked + label{
+    font-family: gilroy-bold;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.botonera__btn{
+    font-family: gilroy-regular;
+    font-size: 25px;
+    color:#FFFFFF66;
+    background-color: #885FCB;
+    border: 0;
+    margin-bottom: 47px;
+    margin-right: 33px;
+    cursor: pointer;
+}
+
+.contenedor-formulariop, .contenedor-formularioc{
+    position: absolute;
+    left: -460px;
+    width: 453px;
+    height: 500px;
+    *background-color: #60be8738;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.contenedorp--activado, .contenedorc--activado{
+    transition: all 1.5s;
+    left: 123px;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+.contenedorp--desactivado, .contenedorc--desactivado{
+    transition: all 1.5s;
+    left: -460px;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+.formulario-p__form, .formulario-c__form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+    font-size: 16px;
+    font-family: gilroy-semibold;
+    color: #fff;
+}
+.formulario-c__form{
+    *display: none;
+}
+
+.formulario-p__label, .formulario-c__label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input--corto{
+    width: 49.5%;
+}
+
+.formulario-p__input{
+    background-color: #885FCB;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #A1F0FA;
+    color: #fff;
+    margin-top: 3px;
+}
+.formulario-p__textarea, .formulario-c__textarea{
+    width: 330px;
+    height: 131px;
+    outline: none;
+    border: 2px solid #A1F0FA;
+    border-radius: 5px;
+    resize: none;
+    background-color: #885FCB;
+    padding: 8px;
+    color:#fff;
+}
+.formulario-c__textarea{
+    width: 100%;
+}
+.formulario-p__btnregistrop, .formulario-c__btnregistroc{
+    cursor: pointer;
+    width: 205px;
+    height: 40px;
+    margin-top: 12px;
+    border-radius: 21px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+    border: 0;
+    font-family: gilroy-semibold;
+    font-size: 18px;
+    color: #885FCB;
+    background-color: #A1F0FA;
+    margin-bottom: 50px;
+    
+}
+.formulario-p__btnregistrop:hover, .formulario-c__btnregistroc:hover{
+    background-color: #F2CF10;
+    color: #ffffff;
+}
+
+.end{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.file{
+    cursor: pointer;
+    background-color:rgb(200, 69, 69);
+    width: 130px;
+    height: 90px;
+    border: 1px dashed #ffffff;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.file span{
+    text-align: center;
+    font-family: gilroy-semibold;
+    font-size: 14px;
+    color:#ffffff ;
+}
+.file img{
+    width: 40px;
+    height: 40px;
+}
+.file_cargar{
+    display: none;
 }
