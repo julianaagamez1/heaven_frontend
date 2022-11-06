@@ -37,7 +37,7 @@ body{
 }
 
 .menu{
-    background-image: url("../image/menu.svg");
+    background-image: url("../img/menu.svg");
     background-repeat: repeat-x;
     background-size: contain;
     width: 26px;
@@ -55,7 +55,7 @@ body{
 }
 
 .controles__carrito{
-    background-image: url("../image/carrito.svg");
+    background-image: url("../img/carrito.svg");
     background-repeat: repeat-x;
     background-size: contain;
     width: 25px;
@@ -68,7 +68,7 @@ body{
     height: 20px;
 }
 .controles__cuenta{
-    background-image: url("../image/cuenta.svg");
+    background-image: url("../img/cuenta.svg");
     background-repeat: repeat-x;
     background-size: contain;
     position: absolute;
@@ -84,7 +84,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url("../image/derrame.png");
+    background-image: url("../img/derrame.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -132,7 +132,7 @@ body{
     width: 41%;
     height: 100%;
     background-color:#f2cf10;
-    background-image: url("../image/mascara.png");
+    background-image: url("../img/mascara.png");
     background-size: contain;
     background-position: top;
 }
